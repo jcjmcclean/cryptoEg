@@ -1,14 +1,20 @@
+// Import e2e dependencies
 import { AppPage } from './app.po';
 
+// Define e2e test
 describe('crypto-eg App', () => {
-  let page: AppPage;
+	// Define page
+	let page: AppPage;
 
-  beforeEach(() => {
-    page = new AppPage();
-  });
+	// Run before each test
+	beforeEach(() => {
+		page = new AppPage();
+	});
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
-  });
+	/////
+
+	it('should display welcome message', () => {
+		page.navigateTo();
+		expect(page.getParagraphText()).toEqual('Welcome to app!');
+	});
 });
